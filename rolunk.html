@@ -14,24 +14,33 @@
             <a href="index.html"><img src="logo.png" alt=""></a>
         </div>
 
-        <div class="links">
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <div class="links" id="navLinks">
             <a href="index.html">Főoldal</a>
-            <a href=".html">Foglalás</a>
-            <a href=".html">Galéria</a>
+            <a href="#">Foglalás</a>
+            <a href="#">Galéria</a>
             <a href="rolunk.html">Rólunk</a>
             <a href="kapcsolat.html">Kapcsolat</a>
             <a href="#">Oldal</a>
         </div>
     </nav>
 
+    
 
 
+<main>
 
+
+</main>
     <footer>
-        <div class="inside">
+        <div class="inside hidden">
             <div>
                 <ul>
-                    <li>zsöveg</li>
                     <li>zsöveg</li>
                     <li>zsöveg</li>
                     <li>zsöveg</li>
@@ -45,13 +54,11 @@
                     <li>szöveg</li>
                     <li>szöveg</li>
                     <li>szöveg</li>
-                    <li>szöveg</li>
                 </ul>
             </div>
 
             <div>
                 <ul>
-                    <li>szöveg</li>
                     <li>szöveg</li>
                     <li>szöveg</li>
                     <li>szöveg</li>
@@ -78,10 +85,17 @@
         </div>
     </div>
 
+    <!-- Theme Toggler Button -->
+    <button class="theme-toggler" id="themeToggler" aria-label="Toggle theme">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="reveal.js"></script>
 </body>
 
 </html>
