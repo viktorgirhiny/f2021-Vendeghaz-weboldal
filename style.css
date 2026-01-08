@@ -520,7 +520,35 @@ footer .inside ul {
 }
 
 
+#rolunk
+{
+    .about-container
+    {
+        text-align: center;
+        padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem);
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
+    .about-text
+    {
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        color: var(--text-dark);
+        line-height: 1.7;
+    }
+
+    .about-text h2
+    {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+    }
+
+    .about-text p
+    {
+        margin-bottom: 1rem;
+    }
+}
 
 
 
