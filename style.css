@@ -482,9 +482,7 @@ footer {
     background-color: var(--primary);
     position: relative;
     width: 100%;
-    padding: clamp(2rem, 4vw, 3rem) 0;
     padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 footer .inside {
@@ -516,8 +514,7 @@ footer .inside ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin: 0 20rem;
-    margin-top: 1rem;
+    margin-top: 1rem;;
     font-size: clamp(0.8rem, 1.3vw, 1.3rem);
     color: var(--primary);
 }
