@@ -695,10 +695,10 @@ footer .inside ul {
         text-align: center;
     }
 
-    .kartya
+    .kartyak
     {
         display: grid;
-        grid-template-columns: repeat(3 1);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
@@ -712,7 +712,7 @@ footer .inside ul {
 
     .kepeken
     {
-
+        position: relative;
     }
 
     .kkartya img
