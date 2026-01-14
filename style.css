@@ -48,12 +48,13 @@ a {
 
 .contact-line
 {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.3rem 20rem;
+    display: flex;;
     color: white;
     background-color: var(--primary);
     font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+    justify-content: center;
+    gap: clamp(2rem, 5vw, 6rem);
+    padding: 5px 0;
 }
 
 nav {
@@ -288,6 +289,15 @@ nav .links a:hover::after {
     }
 }
 
+@media (max-width: 1040px)
+{
+    .footer-line
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* Medium screens (tablets) */
 @media (max-width: 900px) {
     .hamburger {
@@ -347,6 +357,15 @@ nav .links a:hover::after {
     nav .links a {
         padding: 0.5rem 0.7rem;
         font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
+}
+
+@media (max-width: 850px)
+{
+    .contact-line
+    {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -507,6 +526,8 @@ footer .inside ul {
 .footer-line
 {
     background-color: var(--secondary);
+    padding-left: clamp(1rem, 4vw, 2rem);
+    padding-right: clamp(1rem, 4vw, 2rem);
 }
 
 .footer-line ul
@@ -522,6 +543,16 @@ footer .inside ul {
 
 
 
+
+
+
+
+
+
+
+
+
+/*----------------------------kapcsolat--------------------------------  */
 
 #kapcsolat
 {
@@ -544,6 +575,39 @@ footer .inside ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------rolunk--------------------------------  */
 #rolunk
 {
     .about-container
@@ -574,6 +638,78 @@ footer .inside ul {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------foglalas----------------------*/
+#foglalas
+{
+    .ajanlatok
+    {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 0 16px;
+        color: var(--text-light);
+    }
+
+    .ajanlatok h2
+    {
+        margin: 0 0 20px 0;
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .kartya
+    {
+        display: grid;
+        grid-template-columns: repeat(3 1);
+        gap: 20px;
+    }
+
+    .kkartya
+    {
+        background-color: var(--primary);
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
 
 
 
