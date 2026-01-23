@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" id="rolunk">
+<html lang="en" id="galeria">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rólunk</title>
+    <title>Vendégház Főoldala</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="contact-line">
+        <p class="tel">+12 345 678</p>
+        <p class="email">fenyvesliget@gmail.com</p>
+    </div>
     <nav>
         <div class="logo">
             <a href="index.html"><img src="logo.png" alt=""></a>
@@ -22,53 +26,75 @@
 
         <div class="links" id="navLinks">
             <a href="index.html">Főoldal</a>
-            <a href="#">Foglalás</a>
-            <a href="galeria.html">Galéria</a>
+            <a href="foglalas.html">Foglalás</a>
+            <a href="#">Galéria</a>
             <a href="rolunk.html">Rólunk</a>
             <a href="kapcsolat.html">Kapcsolat</a>
             <a href="#">Oldal</a>
         </div>
     </nav>
 
-    
-
-
 <main>
 
-    <section>
-        <div class="about-container">
-            <div class="about-image reveal">
-                <img src="kep.jpg" alt="Cégről kép">
+
+    <section class="gal">
+        <div class="gal-doboz">
+            <h1 class="hidden">Vendégházaink</h1>
+        
+        <div class="gal-racs hidden">
+            <div class="gal-kis">
+                <img src="szoba1.jpg" alt="szoba1">
             </div>
-            <div class="about-text reveal">
-                <h2>Rólunk</h2>
-                <p>
-                    Üdvözöljük weboldalunkon! Cégünk elkötelezett amellett, hogy kiváló szolgáltatásokat nyújtson ügyfeleinek.
-                    Csapatunk szakértőkből áll, akik szenvedélyesen dolgoznak azon, hogy megfeleljenek az Ön igényeinek és
-                    elvárásainak.
-                </p>
-                <p>
-                    Vendégházunk kényelmes szobákat és modern felszereltséget kínál, hogy tartózkodása során otthon érezze magát.
-                    Szolgáltatásaink között szerepel ingyenes Wi-Fi, parkolási lehetőség és egy barátságos személyzet,
-                    amely mindig készen áll arra, hogy segítsen Önnek.
-                </p>
-                <p>
-                    Köszönjük, hogy meglátogatta weboldalunkat. Reméljük, hamarosan együtt dolgozhatunk Önnel!
-                </p>
+            <div class="gal-kis">
+                <img src="szoba2.jpg" alt="szoba1">
             </div>
-        </div> 
+            <div class="gal-kis">
+                <img src="szoba3.jpg" alt="szoba1">
+            </div>
+            <div class="gal-kis">
+                <img src="szoba4.jpg" alt="szoba1">
+            </div>
+            <div class="gal-kis">
+                <img src="szoba5.jpg" alt="szoba1">
+            </div>
+
+            <div class="gal-nagy">
+                <img src="dolgozok.jpg" alt="">
+            </div>
+
+            <div class="gal-kis">
+                <img src="udvar1.jpg" alt="">
+            </div>
+            <div class="gal-kis">
+                <img src="udvar2.jpg" alt="">
+            </div>
+            <div class="gal-kis">
+                <img src="udvar3.jpg" alt="">
+            </div>
+            <div class="gal-kis">
+                <img src="udvar4.jpg" alt="">
+            </div>
+            <div class="gal-kis">
+                <img src="futas.jpg" alt="">
+            </div>
+            <div class="gal-kis">
+                <img src="futas2.jpg" alt="">
+            </div>
+            <div class="gal-kis">
+                <img src="jatszosarok.jpg" alt="">
+            </div>
+        </div>
+        </div>
     </section>
 
-</main>
-    <footer>
+
+    <footer>   
         <div class="inside hidden">
-            <div><li><img src="logo.png" width="100" height="100"></li></div>
             <div>
                 <ul>
                     <li>zsöveg</li>
                     <li>zsöveg</li>
                     <li>zsöveg</li>
-                    <li>© Fenyves Liget Vendégház</li>
                 </ul>
             </div>
             <div>
@@ -76,7 +102,6 @@
                     <li>zsöveg</li>
                     <li>zsöveg</li>
                     <li>zsöveg</li>
-                    <li>ÁSZF</li>
                 </ul>
             </div>
 
@@ -85,7 +110,6 @@
                     <li>szöveg</li>
                     <li>szöveg</li>
                     <li>szöveg</li>
-                    <li>Adatvédelem</li>
                 </ul>
             </div>
 
@@ -94,9 +118,17 @@
                     <li>szöveg</li>
                     <li>szöveg</li>
                     <li>szöveg</li>
-                    <li>Céginformáció</li>
                 </ul>
             </div>
+        </div>
+
+        <div class="footer-line hidden">
+            <ul>
+                <li>© Fenyves Liget Vendégház</li>
+                <li>ÁSZF</li>
+                <li>Adatvédelem</li>
+                <li>Céginformáció</li>
+            </ul>
         </div>
     </footer>
 
@@ -122,6 +154,7 @@
         <span class="sun-icon">☀️</span>
         <span class="moon-icon">🌙</span>
     </button>
+</main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
