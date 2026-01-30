@@ -524,6 +524,22 @@ footer .inside ul {
     line-height: 40px;
 }
 
+footer .inside .fa-brands
+{
+    font-size: 40px;
+    margin-right: 10px;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover
+    {
+        color: var(--text-dark);
+        scale: 1.2;
+        transform: scale(1.2);
+    }
+}
+
 footer .inside a
 {
     color: inherit;
@@ -551,98 +567,7 @@ footer .inside a
 
 
 
-.ajanlat
-{
-    background-color: #fff;
-    margin: 40px auto;
-    max-width: 840px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    display: flex;
-}
 
-.ajanlat-kep
-{
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    display: block;
-}
-
-.ajanlat-info
-{
-    display: grid;
-    padding: 30px;
-    background-color: var(--secondary);
-    color: inherit;
-}
-
-.ajanlat-info h2
-{
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: var(--text-dark);
-}
-
-.ajanlat-info p
-{
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    color: var(--text-dark);
-}
-
-.mennyiseg
-{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
-}
-
-.mennyiseg button
-{
-    width: 45px;
-    height: 45px;
-    border: 1px solid #5a85a3;
-    background-color: #1e6b8a;
-    color: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.mennyiseg input
-{
-    width: 70px;
-    height: 45px;
-    text-align: center;
-    border: 1px solid #5a85a3;
-    background-color: #5a85a3;
-    color: #fff;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.foglalas
-{
-    width: 100%;
-    padding: 16px 24px;
-    background-color: #ff6d35;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.mennyiseg input::-webkit-outer-spin-button,
-.mennyiseg input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}   
 
 
 
@@ -705,11 +630,10 @@ footer .inside a
 
 
 
-
 /*---------------------------- galeria ------------------------------*/
-#galeria
+#galeria 
 {
-    .gal
+    .gal 
     {
         background-color: var(--secondary) !important;
         padding: 10px 16px;
@@ -730,15 +654,16 @@ footer .inside a
         margin-bottom: 50px;
     }
 
-    .gal-racs
+    .gal-racs 
     {
         display: grid;
-        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 120px;
         grid-gap: 10px;
     }
 
-    .gal-kis, .gal-nagy
+    .gal-kis,
+    .gal-nagy 
     {
         border: 1px solid #e5e7eb;
         background: #f8f9fa;
@@ -749,29 +674,124 @@ footer .inside a
         border-radius: 8px;
     }
 
-    .gal-kis:hover, .gal-nagy:hover
+    .gal-kis:hover,
+    .gal-nagy:hover 
     {
         transform: scale(1.3);
         z-index: 10;
         position: relative;
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
-        border-color:#114c6a;
+        border-color: #114c6a;
     }
 
-    .gal-kis img, .gal-nagy img
+    .gal-kis img,
+    .gal-nagy img 
     {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .gal-nagy
+    .gal-nagy 
     {
         grid-column: 2 / span 2;
         grid-row: 2 / span 2;
     }
-}
 
+    .ajanlat 
+    {
+        background-color: #fff;
+        margin: 40px auto;
+        max-width: 840px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
+
+    .ajanlat-kep 
+    {
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .ajanlat-info 
+    {
+        display: grid;
+        padding: 30px;
+        background-color: var(--secondary);
+        color: inherit;
+    }
+
+    .ajanlat-info h2 
+    {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: var(--text-dark);
+    }
+
+    .ajanlat-info p 
+    {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        color: var(--text-dark);
+    }
+
+    .mennyiseg 
+    {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .mennyiseg button 
+    {
+        width: 45px;
+        height: 45px;
+        border: 1px solid #5a85a3;
+        background-color: #1e6b8a;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    .mennyiseg input 
+    {
+        width: 70px;
+        height: 45px;
+        text-align: center;
+        border: 1px solid #5a85a3;
+        background-color: #5a85a3;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .foglalas 
+    {
+        width: 100%;
+        padding: 16px 24px;
+        background-color: #ff6d35;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .mennyiseg input::-webkit-outer-spin-button,
+    .mennyiseg input::-webkit-inner-spin-button 
+    {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
 
 
 
