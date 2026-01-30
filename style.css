@@ -502,6 +502,7 @@ footer {
     position: relative;
     width: 100%;
     padding-top: 1rem;
+    font-size: large;;
 }
 
 footer .inside {
@@ -515,36 +516,133 @@ footer .inside {
 
 footer .inside div {
     text-align: center;
+
 }
 
 footer .inside ul {
     list-style: none;
-    line-height: clamp(1.5rem, 1.65vw, 2rem);
+    line-height: 40px;
 }
 
-
-.footer-line
+footer .inside a
 {
-    background-color: var(--secondary);
-    padding-left: clamp(1rem, 4vw, 2rem);
-    padding-right: clamp(1rem, 4vw, 2rem);
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: inherit;
+    padding: inherit;
 }
 
-.footer-line ul
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ajanlat
+{
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 840px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.ajanlat-kep
+{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+.ajanlat-info
+{
+    display: grid;
+    padding: 30px;
+    background-color: var(--secondary);
+    color: inherit;
+}
+
+.ajanlat-info h2
+{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.ajanlat-info p
+{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.mennyiseg
 {
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 1rem;;
-    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-    color: var(--primary);
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
+.mennyiseg button
+{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #5a85a3;
+    background-color: #1e6b8a;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
 
+.mennyiseg input
+{
+    width: 70px;
+    height: 45px;
+    text-align: center;
+    border: 1px solid #5a85a3;
+    background-color: #5a85a3;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+}
 
+.foglalas
+{
+    width: 100%;
+    padding: 16px 24px;
+    background-color: #ff6d35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-
-
+.mennyiseg input::-webkit-outer-spin-button,
+.mennyiseg input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}   
 
 
 
@@ -785,80 +883,7 @@ footer .inside ul {
 /*---------------------foglalas----------------------*/
 #foglalas
 {
-    .ajanlatok
-    {
-        max-width: 1100px;
-        margin: 60px auto;
-        padding: 0 16px;
-        color: var(--text-light);
-    }
 
-    .ajanlatok h2
-    {
-        margin: 0 0 20px 0;
-        font-size: 34px;
-        text-align: center;
-    }
-
-    .kartyak
-    {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .kkartya
-    {
-        background-color: var(--primary);
-        border: 1px solid #e5e7eb;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    .kepeken
-    {
-        position: relative;
-    }
-
-    .kkartya img
-    {
-        width: 100%;
-        height: 240px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .kkartya .top
-    {
-        position: absolute;
-        left: 8px;
-        bottom: 8px;
-        padding: 6px 10px;
-        font-size: 12px;
-        color: #114c6a;
-        font-weight: 700;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 6px;
-    }
-
-    .kkartya .szoveg
-    {
-        padding: 10px 12px 14px 12px;
-    }
-
-    .kkartya .cim
-    {
-        margin: 0 0 8px 0;
-        font-size: 20px;
-        font-weight: 800;
-    }
-
-    .kkartya .ar
-    {
-        margin: 0;
-        font-weight: 800;
-        color: #d91421;
-    }
 }
 
 

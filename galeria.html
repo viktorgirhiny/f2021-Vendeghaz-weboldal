@@ -27,7 +27,7 @@
         <div class="links" id="navLinks">
             <a href="index.html">Főoldal</a>
             <a href="foglalas.html">Foglalás</a>
-            <a href="#">Galéria</a>
+            <a href="galeria.html">Galéria</a>
             <a href="rolunk.html">Rólunk</a>
             <a href="kapcsolat.html">Kapcsolat</a>
             <a href="#">Oldal</a>
@@ -42,16 +42,16 @@
             <h1 class="hidden">Vendégházaink</h1>
         
         <div class="gal-racs hidden">
-            <div class="gal-kis">
+            <div class="gal-kis" onclick="mutatAjanlat('ajanlat1')">
                 <img src="szoba1.jpg" alt="szoba1">
             </div>
-            <div class="gal-kis">
+            <div class="gal-kis" nclick="mutatAjanlat('ajanlat2')">
                 <img src="szoba2.jpg" alt="szoba1">
             </div>
-            <div class="gal-kis">
+            <div class="gal-kis" nclick="mutatAjanlat('ajanlat3')">
                 <img src="szoba3.jpg" alt="szoba1">
             </div>
-            <div class="gal-kis">
+            <div class="gal-kis" nclick="mutatAjanlat('ajanlat4')">
                 <img src="szoba4.jpg" alt="szoba1">
             </div>
             <div class="gal-kis">
@@ -84,6 +84,26 @@
                 <img src="jatszosarok.jpg" alt="">
             </div>
         </div>
+        </div>
+    </section>
+
+        <section class="ajanlat" id="ajanlat1" style="display: none;">
+        <img src="szoba1.jpg" class="ajanlat-kep">
+        <div class="ajanlat-info">
+            <h2>Standard szoba</h2>
+        <p>
+            <span style="font-size:16px; color:#aaa;text-decoration:line-through;">34.999FT/Fő</span>
+            <br>
+            <span style="font-size: 32px;font-weight: bold; color: #ff7700;">17.999Ft/fő</span>
+        </p>
+        <p>Naponta mosott takarók és törölközők, Reggeli és vacsora az árban, 1 pótágy szükség esetén,
+        Saját mellékhelyiséggel és Szabad használat a sportpályán</p>
+        <div class="mennyiseg">
+            <button type="button" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+            <input type="number" value="1" min="1" readonly>
+            <button type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+        </div>
+        <button class="foglalas">FOGLALJON MOST!</button>
         </div>
     </section>
 
@@ -161,6 +181,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="script.js"></script>
     <script defer src="reveal.js"></script>
+    <script>
+        function mutatAjanlat(id)
+        {
+            var osszes=document.querySelectorAll('.ajanlat');
+            osszes.forEach(function(el)
+            {
+                el.style.display='none';
+            })
+
+
+            var doboz=document.getElementById(id);
+            if (doboz)
+            {
+                doboz.style.display='flex';
+            }
+        }
+    </script>
 </body>
 
 </html>
