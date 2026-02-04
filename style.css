@@ -519,6 +519,13 @@ footer .inside div {
 
 }
 
+footer .inside div img
+{
+    max-width: 200px;
+    border-radius: 8px;
+    max-height: 100%;
+}
+
 footer .inside ul {
     list-style: none;
     line-height: 40px;
@@ -526,7 +533,7 @@ footer .inside ul {
 
 footer .inside .fa-brands
 {
-    font-size: 40px;
+    font-size: 25px;
     margin-right: 10px;
     color: var(--secondary);
     cursor: pointer;
