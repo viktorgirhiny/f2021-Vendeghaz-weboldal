@@ -871,6 +871,89 @@ footer .inside a
     {
         margin-bottom: 1rem;
     }
+
+    .vel-szakasz
+    {
+        background-color: var(--primary);
+        margin: 10px auto;
+        max-width: 900px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 50px;
+    }
+
+    .vel-container
+    {
+        max-width: 840px;
+        margin: 0 auto;
+        background-color: var(--primary);
+        padding: 20px 30px;
+        border-radius: 12px;
+    }
+
+    .vel-cim
+    {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .vel-lista
+    {
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+
+    .vel-item
+    {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px;
+        background-color: #f8f9fa;
+        border-left: 4px solid black;
+        border-radius: 0 8px 8px 0;;
+    }
+
+    .vel-profil
+    {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .vel-tartalom
+    {
+        flex: 1;
+    }
+
+    .vel-szoveg
+    {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 12px;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    .vel-nev
+    {
+        font-weight: bold;
+        color: #114c6a;
+        font-size: 16px;
+        background-color: #e6f1f6;
+        padding: 6px 12px;
+        border-radius: 20px;
+        display: inline-block;
+    }
 }
 
 
@@ -915,7 +998,87 @@ footer .inside a
 /*---------------------foglalas----------------------*/
 #foglalas
 {
+    .booking-form
+    {
+        background-color: #fff;
+        margin: 40px auto;
+        max-width: 900px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        display: flex;
+    }
 
+    .booking-image
+    {
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .booking-info
+    {
+        display: grid;
+        padding: 30px;
+        background-color: var(--secondary);
+        color: inherit;
+    }
+
+    .booking-info h2
+    {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: var(--text-dark);
+    }
+
+    .booking-info p
+    {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        color: var(--text-dark);
+    }
+
+    .booking-info label
+    {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: var(--text-dark);
+    }
+
+    .booking-info input,
+    .booking-info select
+    {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid var(--border-light);
+        border-radius: 6px;
+        font-size: 16px;
+    }
+
+    .booking-info button
+    {
+        width: 100%;
+        padding: 16px 24px;
+        background-color: #ff6d35;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .booking-info button:hover
+    {
+        background-color: #e65c2a;
+    }
+
+    
 }
 
 
