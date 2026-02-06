@@ -198,11 +198,16 @@ nav .links a:hover::after {
     justify-content: center;
 }
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    background-image: url('vendeghaz.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 1400;
+    height: 400px;
+    margin: 0;
     width: 100%;
-    padding: 0 1rem;
+    padding-top:100px;
 }
+
 .hero h1 {
     font-size: clamp(1.5rem, 6vw, 3.5rem);
     margin-bottom: 1rem;
@@ -1033,4 +1038,155 @@ footer .inside a
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------GYIK---------------------------- */
+
+#gyik
+{
+    .ker-szakasz
+    {
+        background-color: #fff;
+        margin: 40px auto;
+        max-width: 900px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .ker-doboz
+    {
+        padding: 30px;
+    }
+
+    .ker-doboz h2
+    {
+        font-size: 28px;
+        color: var(--text-dark);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ker-bevezeto
+    {
+        text-align: center;
+        margin: 0 0 30px 0;
+        color: var(--text-light);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .ker-elemek
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .ker-elem
+    {
+        border: 1px solid #e5e7eb;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .ker-kerdes
+    {
+        width: 100%;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: var(--border-light);
+        color: #111;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        transition: all 0.3s ease;
+    }
+
+    .ker-valtojel
+    {
+        margin-left: auto;
+        font-size: 18px;
+        color: #ff6d35;
+        transition: transform 0.3s ease;
+        font-size: 40px;
+    }
+
+    .ker-elem.aktiv .ker-valtojel
+    {
+        transform: rotate(45deg);
+    }
+
+    .ker-valasz
+    {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        padding: 0 24px;
+        background: #e6f1f6;
+        color: var(--text-dark);
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .ker-elem.aktiv .ker-valasz
+    {
+        max-height: 200px;
+        opacity: 1;
+        padding: 20px 24px;
+    }
 }

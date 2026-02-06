@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="gyik">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendégház Főoldala</title>
+    <title>GYIK</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -36,18 +36,55 @@
     </nav>
 
 <main>
-    <section class="hero hidden">
-        <div class="hero-content">
-            <h1>Üdvözöljük a Fenyvesliget Vendégház Főoldalán!</h1>
-            <p>Fedezze fel szolgáltatásainkat és ajánlatainkat.</p>
-            <a href="#" class="btn">Tudjon meg többet</a>
-        </div>
-    </section>
+    <section class="szakasz">
+        <div class="ker-doboz">
+            <h2>Gyakran ismételt kérdések</h2>
+            <p class="ker-bevezeto">Összegyűjtöttük azokat a kérdéseket amelyeket látogatóink a leggyakrabban feltesznek</p>
+            <div class="ker-elemek">
+                <div class="ker-elem hidden">
+                    <button type="button" class="ker-kerdes">Milyen lehetőségeink vannak az ebédelésre?
+                        <span class="ker-valtojel">+</span>
+                    </button>
+                    <div class="ker-valasz">
+                        <p>A vendégházaink közelében található egy 4 csillagos Magyar étterem ahol jó áron lehet minőségi ételt fogyasztani vagy akár a közeli gyorséttermek is szóba kerülhetnek. Más lehetséges mód pedig a “Foglalás” oldalon, a szoba foglalásakor az “Ebéd biztosítása” opció bejelölésével lehet igénybe venni.</p>
+                    </div>
+                </div>
 
-    <section class="hidden">
-        <div class="info-section">
-            <h2>Szolgáltatásaink</h2>
-            <p>Ismerje meg vendégházunk kényelmi szolgáltatásait és lehetőségeit.</p>
+                <div class="ker-elem hidden">
+                    <button type="button" class="ker-kerdes">Van lehetőség kutyával érkezni?
+                        <span class="ker-valtojel">+</span>
+                    </button>
+                    <div class="ker-valasz">
+                        <p>Igen, van lehetőség kutyával érkezni, azonban ezt előre jelezni kell a foglalás során, valamint egy egyszeri takarítási díjat számolunk fel a kutyával érkező vendégek után.</p>
+                    </div>
+                </div>
+
+                <div class="ker-elem hidden">
+                    <button type="button" class="ker-kerdes">Milyen fizetési lehetőségeim vannak?
+                        <span class="ker-valtojel">+</span>
+                    </button>
+                    <div class="ker-valasz">
+                        <p>Oldalunkon lehet hitel- és bankkártyával is fizetni, emellett SZÉP kártyát elfogadó cég vagyunk. A fizetés teljesítését követően az időpontot megelőző 1 hétben díjmentesen lemondható a foglalás és biztosítjuk a teljes összeg visszatérítését.</p>
+                    </div>
+                </div>
+
+                <div class="ker-elem hidden">
+                    <button type="button" class="ker-kerdes">Kötelező-e a teljes összeget egyszerre fizetni?
+                        <span class="ker-valtojel">+</span>
+                    </button>
+                    <div class="ker-valasz">
+                        <p>Fizetési opcióink közül választható az “Egyszeri fizetés” és a két részletes fizetés is. Ez azt takarja, hogy nem kötelező a teljes összeget a foglalás napján befizetnie a látogatónak, hanem csak a megadott %-ot és a fennmaradó összeget pedig személyesen a vendégház irodájában a megérkezést követően lehet törleszteni. </p>
+                    </div>
+                </div>
+
+                <div class="ker-elem hidden">
+                    <button type="button" class="ker-kerdes">Milyen szolgáltatások érhetők el a vendégházban?
+                        <span class="ker-valtojel">+</span>
+                    </button>
+                    <div class="ker-valasz">
+                        <p>A vendégházunkban ingyenes Wi-Fi, parkolási lehetőség vehető igénybe. Továbbá a szobák légkondicionáltak és jól felszereltek a kényelmes tartózkodás érdekében.</p>
+                    </div>
+            </div>
         </div>
     </section>
 
@@ -118,5 +155,4 @@
     <script defer src="script.js"></script>
     <script defer src="reveal.js"></script>
 </body>
-
 </html>
