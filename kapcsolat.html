@@ -34,19 +34,52 @@
 
 
 <main id="kapcsolat">
-    <section>
-        <div class="info-section">
-            <h2>Kapcsolat</h2>
-            <p>Elérhetőségeink és kapcsolatfelvételi információk.</p>
-        </div>
+    <section class="contact-section hidden">
+        <div class="contact-container">
 
-        <div class="contact-form">
-            <h3>Elérhetőségeink:</h3>
-            <ul>
-                <li>Cím: 1234 Város, utca 1.</li>
-                <li>Telefon: +12 34 567 7899</li>
-                <li>Email:  fenyvesliget@vendeghaz.hu </li>
-            </ul>
+            <div class="contact-image">
+                <img src="dolgozok.jpg" alt="Vendégház képe">
+            </div>
+
+
+            <div class="contact-form-wrapper">
+                <h2>Kapcsolatfelvétel</h2>
+                <form class="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Név:</label>
+                        <input type="text" id="name" name="name" placeholder="Az Ön neve" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email cím" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="reason">Terjedelem:</label>
+                        <select id="reason" name="reason" required>
+                            <option value="">-- Válasszon egy lehetőséget --</option>
+                            <option value="foglalás">Foglalás</option>
+                            <option value="ár">Ár kérdés</option>
+                            <option value="szobák">Szobák információ</option>
+                            <option value="rendezvény">Rendezvény szervezés</option>
+                            <option value="egyéb">Egyéb</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Üzenet:</label>
+                        <textarea id="message" name="message" placeholder="Írja le az üzenetét.." rows="6" required></textarea>
+                    </div>
+
+
+                    <button type="submit" class="send-button">Küldés</button>
+                </form>
+            </div>
         </div>
     </section>
 </main>
