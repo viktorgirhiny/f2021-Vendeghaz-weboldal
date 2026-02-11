@@ -234,8 +234,8 @@ nav .links a:hover::after {
     touch-action: manipulation;
 }
 .hero .btn:hover {
-    background-color: transparent;
-    color: var(--primary);
+
+    color: var(--secondary);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(107, 142, 35, 0.3);
 }
@@ -998,88 +998,197 @@ footer .inside a
 /*---------------------foglalas----------------------*/
 #foglalas
 {
-    .booking-form
-    {
-        background-color: #fff;
-        margin: 40px auto;
-        max-width: 900px;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        display: flex;
-    }
-
-    .booking-image
-    {
-        width: 450px;
-        height: 450px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .booking-info
-    {
-        display: grid;
-        padding: 30px;
-        background-color: var(--secondary);
-        color: inherit;
-    }
-
-    .booking-info h2
-    {
-        font-size: 28px;
-        margin-bottom: 20px;
-        color: var(--text-dark);
-    }
-
-    .booking-info p
-    {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-        color: var(--text-dark);
-    }
-
-    .booking-info label
-    {
-        display: block;
-        margin-top: 15px;
-        margin-bottom: 5px;
-        font-weight: 600;
-        color: var(--text-dark);
-    }
-
-    .booking-info input,
-    .booking-info select
-    {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid var(--border-light);
-        border-radius: 6px;
-        font-size: 16px;
-    }
-
-    .booking-info button
-    {
-        width: 100%;
-        padding: 16px 24px;
-        background-color: #ff6d35;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .booking-info button:hover
-    {
-        background-color: #e65c2a;
-    }
-
-    
+    .rent-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
 }
+
+.rent-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+/* Houses grid */
+.houses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.house-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.house-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.house-card.selected {
+    border: 3px solid #27ae60;
+    box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.15), 0 18px 40px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.house-card::after {
+    content: "Kiválasztva";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #27ae60;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.house-card.selected::after {
+    opacity: 1;
+}
+
+.house-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.house-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 15px 5px;
+    color: #1f2d3d;
+}
+
+.house-card p {
+    margin: 5px 15px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.house-card .price {
+    margin: 12px 15px 18px;
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 1.05rem;
+}
+
+/* Form styles */
+.rent-form {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.15);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Submit button */
+.rent-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.rent-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(39, 174, 96, 0.3);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .rent-section {
+        margin: 40px auto;
+    }
+
+    .rent-form {
+        padding: 22px;
+    }
+
+    .house-card img {
+        height: 160px;
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded" , () => {
             gsap.set(".block", { visibiliy: "visible", scaleY: 0 });
             gsap.to(".block", {
                 scaleY: 1,
-                duration: 1,
+                duration: 0.6,
                 stagger: {
                     each: 0.1,
                     from: "start",

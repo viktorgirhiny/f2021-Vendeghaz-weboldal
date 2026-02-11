@@ -36,8 +36,82 @@
     </nav>
 
 <main>
-    <section>
-        
+    <section class="rent-section">
+        <h2>Apartmanjaink</h2>
+
+        <div class="houses">
+            <div class="house-card" data-house="Fenyves Ház">
+                <img src="vendeghaz.jpg" alt="Ház 1">
+                <h3>Fenyves Ház</h3>
+                <p>2 hálószoba, 4 fő, terasz, erdei kilátás</p>
+                <p class="price">Ár: 25 000 Ft / éj</p>
+            </div>
+
+            <div class="house-card" data-house="Tóparti Ház">
+                <img src="vendeghaz2.avif" alt="Ház 2">
+                <h3>Tóparti Ház</h3>
+                <p>3 hálószoba, 6 fő, saját kert</p>
+                <p class="price">Ár: 35 000 Ft / éj</p>
+            </div>
+
+            <div class="house-card" data-house="Panoráma Ház">
+                <img src="vendeghaz.jpg" alt="Ház 3">
+                <h3>Panoráma Ház</h3>
+                <p>1 hálószoba, 2 fő, panorámás kilátás</p>
+                <p class="price">Ár: 18 000 Ft / éj</p>
+            </div>
+        </div>
+
+        <h2>Foglalási űrlap</h2>
+
+        <form class="rent-form">
+            <div class="form-group">
+                <label for="name">Név</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefonszám</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="house">Választott ház</label>
+                <select id="house" name="house" required>
+                    <option value="">-- Válassz házat --</option>
+                    <option value="fenyves">Fenyves Ház</option>
+                    <option value="toparti">Tóparti Ház</option>
+                    <option value="panorama">Panoráma Ház</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="checkin">Érkezés dátuma</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Távozás dátuma</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Vendégek száma</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Megjegyzés</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="rent-btn">Foglalás elküldése</button>
+        </form>
     </section>
 
 
@@ -101,9 +175,46 @@
     </button>
 </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+const cards = document.querySelectorAll(".house-card");
+const select = document.getElementById("house");
+
+// helper: highlight card by house name
+function selectHouseByName(name) {
+    cards.forEach(c => {
+        if (c.getAttribute("data-house") === name) {
+            c.classList.add("selected");
+        } else {
+            c.classList.remove("selected");
+        }
+    });
+}
+
+// click on house card -> update dropdown + highlight
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        const houseName = card.getAttribute("data-house");
+
+        // highlight selected card
+        selectHouseByName(houseName);
+
+        // update dropdown by text
+        for (let option of select.options) {
+            if (option.text === houseName) {
+                select.value = option.value;
+                break;
+            }
+        }
+    });
+});
+
+// change dropdown -> highlight card
+select.addEventListener("change", () => {
+    const selectedText = select.options[select.selectedIndex].text;
+    selectHouseByName(selectedText);
+});
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="script.js"></script>
     <script defer src="reveal.js"></script>
 </body>
