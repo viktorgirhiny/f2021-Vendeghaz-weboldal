@@ -282,33 +282,38 @@ nav .links a:hover::after {
 
 .gr-sor
 {
-    display: flex;
-    gap: 25px;
-    width: 1100px;
+    display: inline-flex;
+    gap: 15px;
+    width: 1200px;
     max-width: 95%;
     justify-content: center;
 }
 
-.gr-doboz
+.gr-szoveg
 {
     flex: 0 0 240px;
     padding: 130px 25px 40px;
     text-align: center;
-    color: var(--text-dark);
+    color: var(--text-light);
     position: relative;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
+.gr-cim
+{
+    justify-content: center;
+}
+
 .gr-kor
 {
-    width: 240px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
     top:- 120px;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
