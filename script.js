@@ -145,4 +145,12 @@ document.addEventListener("DOMContentLoaded" , () => {
             })
         });
     }
+
+    // FAQ accordion functionality
+    document.querySelectorAll('.ker-kerdes').forEach(button => {
+        button.addEventListener('click', () => {
+            const elem = button.closest('.ker-elem');
+            elem.classList.toggle('aktiv');
+        });
+    });
 });
