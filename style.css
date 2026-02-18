@@ -5,7 +5,7 @@
 }
 
 :root{
-    --primary: #2e8b57;
+    --primary: #008e78;
     --secondary: #fffdd0;
     --text-dark: #1a1a1a;
     --text-light: #ccc;
@@ -16,7 +16,7 @@
 
 /* Dark theme */
 :root[data-theme="dark"] {
-    --primary: #4ecc71;
+    --primary: #005044;
     --secondary: #1a1a1a;
     --text-dark: #f0f0f0;
     --text-light: #999;
@@ -224,7 +224,7 @@ nav .links a:hover::after {
     display: inline-block;
     padding: clamp(0.6rem, 2vw, 0.9rem) clamp(1rem, 3vw, 1.8rem);
     font-size: clamp(0.95rem, 2.5vw, 1.1rem);
-    color: var(--secondary);
+    color: var(--text-dark);
     background-color: var(--primary);
     border: 2px solid var(--primary);
     border-radius: 6px;
@@ -280,7 +280,42 @@ nav .links a:hover::after {
     line-height: 1.7;
 }
 
+.gr-sor
+{
+    display: flex;
+    gap: 25px;
+    width: 1100px;
+    max-width: 95%;
+    justify-content: center;
+}
 
+.gr-doboz
+{
+    flex: 0 0 240px;
+    padding: 130px 25px 40px;
+    text-align: center;
+    color: var(--text-dark);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.gr-kor
+{
+    width: 240px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:- 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
 
 /* Large screens */
 @media (min-width: 1200px) {
@@ -516,7 +551,7 @@ footer .inside {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: clamp(1.5rem, 3vw, 2.5rem);
     margin: auto;
-    color: var(--secondary);
+    color: var(--text-dark);
 }
 
 footer .inside div {
@@ -540,7 +575,7 @@ footer .inside .fa-brands
 {
     font-size: 25px;
     margin-right: 10px;
-    color: var(--secondary);
+    color: var(--text-dark);
     cursor: pointer;
     transition: all 0.3s ease;
 
@@ -554,7 +589,7 @@ footer .inside .fa-brands
 
 footer .inside a
 {
-    color: inherit;
+    color: var(--text-dark);
     font-size: inherit;
     font-weight: inherit;
     margin: inherit;
@@ -685,7 +720,7 @@ footer .inside a
     .form-group textarea:focus {
         outline: none;
         border-color: var(--primary);
-        box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+    box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.4);
     }
 
     .form-group textarea {
@@ -891,8 +926,8 @@ footer .inside a
     {
         width: 45px;
         height: 45px;
-        border: 1px solid #5a85a3;
-        background-color: #1e6b8a;
+        border: none;
+        background-color: var(--primary);
         color: #fff;
         border-radius: 8px;
         cursor: pointer;
@@ -904,8 +939,8 @@ footer .inside a
         width: 70px;
         height: 45px;
         text-align: center;
-        border: 1px solid #5a85a3;
-        background-color: #5a85a3;
+        border: none;
+        background-color: var(--primary);
         color: #fff;
         border-radius: 8px;
         font-size: 16px;
@@ -980,6 +1015,11 @@ footer .inside a
         margin: 0 auto;
     }
 
+    .about-image img
+    {
+        max-width: 700px;
+        aspect-ratio: 16/9;
+    }
     .about-text
     {
         font-size: clamp(1rem, 2.5vw, 1.2rem);
@@ -992,6 +1032,7 @@ footer .inside a
         margin-top: 1.5rem;
         margin-bottom: 1rem;
         color: var(--primary);
+        font-size: clamp(1.3rem, 5vw, 2.6rem);
     }
 
     .about-text p
@@ -1138,7 +1179,7 @@ footer .inside a
     color: var(--text-dark);
 }
 
-/* Houses grid */
+
 .houses {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1210,7 +1251,7 @@ footer .inside a
     font-size: 1.05rem;
 }
 
-/* Form styles */
+
 .rent-form {
     background: #ffffff;
     border-radius: 16px;
@@ -1247,22 +1288,22 @@ footer .inside a
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #27ae60;
-    box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.15);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.4);
 }
 
 .form-group textarea {
     resize: vertical;
 }
 
-/* Submit button */
+
 .rent-btn {
     width: 100%;
     margin-top: 10px;
     padding: 14px;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    background: var(--primary);
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
@@ -1562,6 +1603,7 @@ footer .inside a
         color: #ff6d35;
         transition: transform 0.3s ease;
         font-size: 40px;
+        cursor: pointer;
     }
 
     .ker-elem.aktiv .ker-valtojel
