@@ -367,6 +367,7 @@ nav .links a:hover::after {
     font-size: 38px;
     box-shadow: 0 18px 28px rgba(0, 0, 0, 0.25);
     z-index: 1;
+    border: 5px solid var(--primary);
 }
 
 
@@ -1442,51 +1443,69 @@ footer .inside a
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 18px;
-}
+        gap: 0.5rem;
+        margin-bottom: 18px;
+    }
 
-.form-group label {
-    font-size: 0.95rem;
-    margin-bottom: 6px;
-    color: #2c3e50;
-    font-weight: 600;
-}
+    .form-group label {
+        color: #323232;
+        font-weight: 600;
+        font-size: 1rem;
+        text-align: left;
+    }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    font-size: 0.95rem;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    outline: none;
-}
+    /* match contact form input/select/textarea styling */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.8rem;
+        border: 2px solid rgb(143, 143, 143);
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 1rem;
+        transition: border-color 200ms ease, box-shadow 200ms ease;
+        background-color: #fff;
+        color: black;
+    }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 4px #e2eee6;
-}
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.4);
+    }
 
-.form-group textarea {
+    .form-group textarea {
+        resize: vertical;
     resize: vertical;
 }
 
 
-.rent-btn {
+/* use same button style as contact page */
+    .rent-btn {
     width: 100%;
     margin-top: 10px;
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    background: var(--primary);
+    padding: 1rem 2rem;
+    background-color: var(--primary);
     color: #fff;
-    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+    transition: background-color 200ms ease, transform 200ms ease;
+    align-self: flex-start;
+    margin: auto auto;
+}
+
+.rent-btn:hover {
+    background-color: #228b42;
+    transform: translateY(-2px);
+}
+
+.rent-btn:active {
+    transform: translateY(0);
 }
 
 .rent-btn:hover {

@@ -43,17 +43,17 @@
             <h1 class="hidden">Vendégházaink</h1>
         
         <div class="gal-racs hidden">
-            <div class="gal-kis" onclick="mutatAjanlat('ajanlat1')">
-                <img src="szoba1.jpg" alt="szoba1">
+            <div class="gal-kis" onclick="mutatAjanlat('ajanlat1')" id="szoveg1">
+                <img src="szoba1.jpg" alt="szoba1" onclick="mutatAjanlat('ajanlat1')">
             </div>
-            <div class="gal-kis" onclick="mutatAjanlat('ajanlat2')">
-                <img src="szoba2.jpg" alt="szoba1">
+            <div class="gal-kis" onclick="mutatAjanlat('ajanlat2')" id="szoveg2">
+                <img src="szoba2.jpg" alt="szoba1" onclick="mutatAjanlat('ajanlat2')">
             </div>
-            <div class="gal-kis" onclick="mutatAjanlat('ajanlat3')">
-                <img src="szoba3.jpg" alt="szoba1">
+            <div class="gal-kis" onclick="mutatAjanlat('ajanlat3')" id="szoveg3">
+                <img src="szoba3.jpg" alt="szoba1" onclick="mutatAjanlat('ajanlat3')">
             </div>
-            <div class="gal-kis" onclick="mutatAjanlat('ajanlat4')">
-                <img src="szoba4.jpg" alt="szoba1">
+            <div class="gal-kis" onclick="mutatAjanlat('ajanlat4')" id="szoveg4">
+                <img src="szoba4.jpg" alt="szoba1" onclick="mutatAjanlat('ajanlat4')">
             </div>
             <div class="gal-kis">
                 <img src="szoba5.jpg" alt="szoba1">
@@ -108,6 +108,66 @@
         </div>
     </section>
 
+    <section class="ajanlat hidden" id="ajanlat2" style="display: none;">
+        <img src="szoba2.jpg" class="ajanlat-kep">
+        <div class="ajanlat-info">
+            <h2>Superior szoba</h2>
+        <p>
+            <span style="font-size:16px; color:#aaa;text-decoration:line-through;">44.999FT/Fő</span>
+            <br>
+            <span style="font-size: 32px;font-weight: bold; color: #ff7700;">22.499Ft/fő</span>
+        </p>
+        <p>Tágasabb elrendezés, erkélyes kilátással, Reggeli és vacsora az árban, 1 pótágy elérhető,
+        Saját fürdőszoba és wellness használat</p>
+        <div class="mennyiseg">
+            <button type="button" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+            <input type="number" value="1" min="1" readonly>
+            <button type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+        </div>
+        <button class="foglalas">FOGLALJON MOST!</button>
+        </div>
+    </section>
+
+    <section class="ajanlat hidden" id="ajanlat3" style="display: none;">
+        <img src="szoba3.jpg" class="ajanlat-kep">
+        <div class="ajanlat-info">
+            <h2>Deluxe szoba</h2>
+        <p>
+            <span style="font-size:16px; color:#aaa;text-decoration:line-through;">54.999FT/Fő</span>
+            <br>
+            <span style="font-size: 32px;font-weight: bold; color: #ff7700;">27.499Ft/fő</span>
+        </p>
+        <p>Luxus berendezések, pezsgőfürdő, Reggeli és vacsora az árban, két pótágy lehetséges,
+        Privát terasz és korlátlan wellness használat</p>
+        <div class="mennyiseg">
+            <button type="button" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+            <input type="number" value="1" min="1" readonly>
+            <button type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+        </div>
+        <button class="foglalas">FOGLALJON MOST!</button>
+        </div>
+    </section>
+
+    <section class="ajanlat hidden" id="ajanlat4" style="display: none;">
+        <img src="szoba4.jpg" class="ajanlat-kep">
+        <div class="ajanlat-info">
+            <h2>Family szoba</h2>
+        <p>
+            <span style="font-size:16px; color:#aaa;text-decoration:line-through;">64.999FT/Fő</span>
+            <br>
+            <span style="font-size: 32px;font-weight: bold; color: #ff7700;">32.499Ft/fő</span>
+        </p>
+        <p>Nagyobb tér 4 fő részére, gyerekágy lehetőség, Reggeli és vacsora az árban, két pótágy,
+        Különálló szobák, játszósarok és privát kert használat</p>
+        <div class="mennyiseg">
+            <button type="button" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+            <input type="number" value="1" min="1" readonly>
+            <button type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+        </div>
+        <button class="foglalas">FOGLALJON MOST!</button>
+        </div>
+    </section>
+
 
     <footer>
         <div class="inside hidden">
@@ -137,7 +197,7 @@
             <div>
                 <ul>
                     <li><h3>Fent vagyunk itt is:</h3></li>
-                    <li>Instagram<i class="fa-brands fa-instagram"></i></li>
+                    <a href="https://www.instagram.com/fenyvesliget/"><li>Instagram<i class="fa-brands fa-instagram"></i></li></a>
                     <li>Facebook:<i class="fa-brands fa-facebook"></i></li>
                     <li>Adatvédelem</li>
                 </ul>
